@@ -1,8 +1,8 @@
-(ns ns-org-approaches.overtone-approach.api
+(ns com.nomistech.ns-org-approaches.overtone-approach.api
   (:require [com.nomistech.clojure-utils :as u]
-            [ns-org-approaches.overtone-approach.impl-1]))
+            [com.nomistech.ns-org-approaches.overtone-approach.impl-1]))
 
-(u/import-vars ns-org-approaches.overtone-approach.impl-1 ; TODO: Add capability for using namespace aliases
+(u/import-vars com.nomistech.ns-org-approaches.overtone-approach.impl-1 ; TODO: Add capability for using namespace aliases
                [x-val
                 x-fun])
 
@@ -13,8 +13,8 @@
 ;;; and Midje.
 (u/import-vars com.nomistech.clojure-dev-utils [nomis-pp-classpath])
 
-(u/import-vars ns-org-approaches.overtone-approach.protocols
+(u/import-vars com.nomistech.ns-org-approaches.overtone-approach.protocols
                [f1])
 
-(u/import-vars ns-org-approaches.overtone-approach.impl-1
+(u/import-vars com.nomistech.ns-org-approaches.overtone-approach.impl-1
                [create-r])

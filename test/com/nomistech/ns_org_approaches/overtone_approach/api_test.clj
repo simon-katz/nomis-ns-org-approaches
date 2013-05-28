@@ -1,6 +1,6 @@
-(ns ns-org-approaches.overtone-approach.api-test
+(ns com.nomistech.ns-org-approaches.overtone-approach.api-test
   (:require [midje.sweet :refer :all]
-            [ns-org-approaches.overtone-approach.api :refer :all]))
+            [com.nomistech.ns-org-approaches.overtone-approach.api :refer :all]))
 
 (fact x-val
       => "This is x-val.")
