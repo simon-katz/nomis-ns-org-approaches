@@ -3,12 +3,12 @@
              :as protocols]
             [com.nomistech.ns-org-approaches.import-vars.impl-1
              :as impl-1]
-            [com.nomistech.clojure-utils :as u]))
+            [com.nomistech.clojure-utils :as i]))
 
-(u/import-vars protocols
+(i/import-vars protocols
                [m])
 
-(u/import-vars impl-1
+(i/import-vars impl-1
                [x-val
                 x-fun
                 create-r])
@@ -18,5 +18,5 @@
   ;; on its namespace in our `ns` form. This will cause tools that rely
   ;; on `ns` forms to fail to work. That includes clojure.tools.namespace
   ;; and Midje.
-  (u/import-vars com.nomistech.clojure-dev-utils
+  (i/import-vars com.nomistech.clojure-dev-utils
                  [nomis-pp-classpath]))
