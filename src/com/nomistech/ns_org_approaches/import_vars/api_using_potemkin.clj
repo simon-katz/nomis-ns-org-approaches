@@ -5,10 +5,10 @@
              :as impl-1]
             [potemkin :as pot]))
 
-(pot/import-vars [com.nomistech.ns-org-approaches.import-vars.protocols
+(pot/import-vars [protocols
                   m])
 
-(pot/import-vars [com.nomistech.ns-org-approaches.import-vars.impl-1
+(pot/import-vars [impl-1
                   x-val
                   x-fun
                   create-r])
