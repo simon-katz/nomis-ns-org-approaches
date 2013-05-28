@@ -1,9 +1,9 @@
 (ns com.nomistech.ns-org-approaches.overtone-approach.api
-  (:require [com.nomistech.clojure-utils :as u]
-            [com.nomistech.ns-org-approaches.overtone-approach.protocols
+  (:require [com.nomistech.ns-org-approaches.overtone-approach.protocols
              :as protocols]
             [com.nomistech.ns-org-approaches.overtone-approach.impl-1
-             :as impl-1]))
+             :as impl-1]
+            [com.nomistech.clojure-utils :as u]))
 
 (u/import-vars protocols [m])
 
