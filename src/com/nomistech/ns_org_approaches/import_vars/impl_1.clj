@@ -1,5 +1,5 @@
-(ns com.nomistech.ns-org-approaches.overtone-approach.impl-1
-  (:require [com.nomistech.ns-org-approaches.overtone-approach.protocols
+(ns com.nomistech.ns-org-approaches.import-vars.impl-1
+  (:require [com.nomistech.ns-org-approaches.import-vars.protocols
              :as protocols]))
 
 (def x-val "This is x-val.")

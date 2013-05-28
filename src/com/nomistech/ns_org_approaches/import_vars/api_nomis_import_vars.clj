@@ -1,7 +1,7 @@
-(ns com.nomistech.ns-org-approaches.overtone-approach.api
-  (:require [com.nomistech.ns-org-approaches.overtone-approach.protocols
+(ns com.nomistech.ns-org-approaches.import-vars.api-nomis-import-vars
+  (:require [com.nomistech.ns-org-approaches.import-vars.protocols
              :as protocols]
-            [com.nomistech.ns-org-approaches.overtone-approach.impl-1
+            [com.nomistech.ns-org-approaches.import-vars.impl-1
              :as impl-1]
             [com.nomistech.clojure-utils :as u]))
 
