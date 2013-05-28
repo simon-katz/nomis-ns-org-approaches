@@ -14,5 +14,5 @@
       => nil)
 
 (fact "All is ok with protocols and records"
-      (f1 (create-r 100))
+      (m (create-r 100))
       => 100)

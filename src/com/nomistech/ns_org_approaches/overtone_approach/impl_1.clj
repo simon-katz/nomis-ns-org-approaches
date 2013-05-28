@@ -9,6 +9,6 @@
 
 (defrecord R [x]
   protocols/P
-  (f1 [r] (:x r)))
+  (m [r] (:x r)))
 
 (defn create-r [x] (R. x))

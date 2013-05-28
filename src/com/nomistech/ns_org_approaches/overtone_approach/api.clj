@@ -5,7 +5,7 @@
             [com.nomistech.ns-org-approaches.overtone-approach.impl-1
              :as impl-1]))
 
-(u/import-vars protocols [f1])
+(u/import-vars protocols [m])
 
 (u/import-vars impl-1 [x-val
                        x-fun
