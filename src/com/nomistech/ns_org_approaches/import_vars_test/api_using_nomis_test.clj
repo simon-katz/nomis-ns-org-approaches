@@ -1,6 +1,6 @@
-(ns com.nomistech.ns-org-approaches.import-vars-test.api-test
+(ns com.nomistech.ns-org-approaches.import-vars-test.api-using-nomis-test
   (:require [midje.sweet :refer :all]
-            [com.nomistech.ns-org-approaches.import-vars.api-nomis-import-vars :refer :all]))
+            [com.nomistech.ns-org-approaches.import-vars.api-using-nomis :refer :all]))
 
 (fact x-val
       => "This is x-val.")
