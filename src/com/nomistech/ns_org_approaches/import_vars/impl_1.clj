@@ -13,8 +13,8 @@
 
 (defmacro x-macro
   "This is the doc string for x-macro."
-  [x]
-  `(do ~x))
+  []
+  `(do "This is x-macro."))
 
 (defrecord R [x]
   protocols/P

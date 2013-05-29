@@ -8,8 +8,8 @@
 (fact (x-fun)
       => "This is x-fun.")
 
-(fact (x-macro 42)
-      => 42)
+(fact (x-macro)
+      => "This is x-macro.")
 
 (fact "We can call `nomis-pp-classpath`"
       (let [_ (with-out-str (nomis-pp-classpath))]
