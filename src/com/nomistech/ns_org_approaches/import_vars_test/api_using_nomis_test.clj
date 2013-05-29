@@ -2,13 +2,16 @@
   (:require [midje.sweet :refer :all]
             [com.nomistech.ns-org-approaches.import-vars.api-using-nomis :refer :all]))
 
-(fact x-val
+(fact "Values work"
+      x-val
       => "This is x-val.")
 
-(fact (x-fun)
+(fact "Funcions work"
+      (x-fun)
       => "This is x-fun.")
 
-(fact (x-macro)
+(fact "Macros work"
+      (x-macro)
       => "This is x-macro.")
 
 (fact "We can call `nomis-pp-classpath`"

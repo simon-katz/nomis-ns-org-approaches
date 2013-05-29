@@ -21,6 +21,5 @@
   (m [r] (:x r)))
 
 (defn create-r
-  "This is the doc string for `create-r`."
   [x]
   (R. x))
