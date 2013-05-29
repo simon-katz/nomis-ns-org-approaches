@@ -14,6 +14,10 @@
       (x-macro)
       => "This is x-macro.")
 
+(fact "Macros around dynamic binding work"
+      (with-x [42] (get-x))
+      => 42)
+
 (fact "We can call `nomis-pp-classpath`"
       (let [_ (with-out-str (nomis-pp-classpath))]
         nil)

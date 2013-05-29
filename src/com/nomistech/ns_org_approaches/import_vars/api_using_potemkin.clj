@@ -13,6 +13,8 @@
                 x-val
                 x-fun
                 x-macro
+                with-x
+                get-x
                 create-r])
 
 (do
