@@ -1,0 +1,11 @@
+;; - Look at arg lists in emacs, and doc strings.
+;;   - Try same symbol name in multiple namespaces.
+;; - Try find-source in emacs.
+;;   - Try same symbol name in multiple namespaces.
+;;   - Try a symbol that's not in a mentioned namespace.
+;; - (If same symbol name in multiple namespaces does bad things, will have
+;;   to separate potemkin and nomis.)
+;; - Look at the the values of your vars. Ah, no chains, right? Look at
+;;   what clojure.lang.Var/intern does.
+;; - Do macros.
+;; - Do values.
