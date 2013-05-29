@@ -11,6 +11,11 @@
   []
   "This is x-fun.")
 
+(defmacro x-macro
+  "This is the doc string for x-macro."
+  [x]
+  `(do ~x))
+
 (defrecord R [x]
   protocols/P
   (m [r] (:x r)))

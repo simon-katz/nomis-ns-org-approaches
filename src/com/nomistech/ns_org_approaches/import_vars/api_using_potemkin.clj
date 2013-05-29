@@ -11,6 +11,7 @@
 (i/import-vars [impl-1
                 x-val
                 x-fun
+                x-macro
                 create-r])
 
 (do
