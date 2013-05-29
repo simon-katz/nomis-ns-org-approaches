@@ -6,6 +6,7 @@
             [potemkin :as i]))
 
 (i/import-vars [protocols
+                P
                 m])
 
 (i/import-vars [impl-1

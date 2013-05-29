@@ -16,6 +16,14 @@
         nil)
       => nil)
 
-(fact "All is ok with protocols and records"
+(fact "Protocols and records #1"
       (m (create-r 100))
       => 100)
+
+(defrecord R2 [x]
+  P
+  (m [r] 999))
+
+(fact "Protocols and records #2"
+      (m (R2. 100))
+      => 999)

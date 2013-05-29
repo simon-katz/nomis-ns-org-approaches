@@ -6,7 +6,8 @@
             [com.nomistech.clojure-utils :as i]))
 
 (i/import-vars protocols
-               [m])
+               [P
+                m])
 
 (i/import-vars impl-1
                [x-val
