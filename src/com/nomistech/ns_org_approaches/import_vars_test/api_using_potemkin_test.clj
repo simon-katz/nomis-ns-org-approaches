@@ -34,3 +34,8 @@
 (fact "Protocols and records #2"
       (m (R2. 100))
       => 999)
+
+(fact "Identity of vars is broken -- `with-redefs` doesn't do what you want"
+      (with-redefs [x-fun (fn [] "Redef")]
+        (x-fun-caller))
+      => "This is x-fun.")

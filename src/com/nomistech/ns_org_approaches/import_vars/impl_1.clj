@@ -11,6 +11,10 @@
   []
   "This is x-fun.")
 
+(defn x-fun-caller
+  []
+  (x-fun))
+
 (defmacro x-macro
   "This is the doc string for x-macro."
   []
