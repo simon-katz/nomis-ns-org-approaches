@@ -2,13 +2,20 @@
   (:require [com.nomistech.ns-org-approaches.import-vars.protocols
              :as protocols]))
 
-(def x-val "This is x-val.")
+(def x-val
+  "This is the doc string for x-val."
+  "This is x-val.")
 
-(defn x-fun [] "This is x-fun.")
-
+(defn x-fun
+  "This is the doc string for x-fun."
+  []
+  "This is x-fun.")
 
 (defrecord R [x]
   protocols/P
   (m [r] (:x r)))
 
-(defn create-r [x] (R. x))
+(defn create-r
+  "This is the doc string for `create-r`."
+  [x]
+  (R. x))
