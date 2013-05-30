@@ -1,6 +1,7 @@
 (ns com.nomistech.ns-org-approaches.import-vars-test.api-using-nomis-test
   (:require [midje.sweet :refer :all]
-            [com.nomistech.ns-org-approaches.import-vars.api-using-nomis :refer :all]))
+            [com.nomistech.ns-org-approaches.import-vars.api-using-nomis
+             :refer :all]))
 
 (fact "Values work"
       x-val
@@ -35,7 +36,7 @@
       (m (R2. 100))
       => 999)
 
-(fact "Identity of vars is broken -- `with-redefs` doesn't do what you want"
+(fact "Identity of vars is broken -- `with-redefs` doesn't work"
       (with-redefs [x-fun (fn [] "Redef")]
         (x-fun-caller))
       => "This is x-fun.")
