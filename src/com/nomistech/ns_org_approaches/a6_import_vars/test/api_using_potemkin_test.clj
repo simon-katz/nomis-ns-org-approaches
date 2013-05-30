@@ -1,6 +1,6 @@
-(ns com.nomistech.ns-org-approaches.a6_import-vars-test.api-using-potemkin_test
+(ns com.nomistech.ns-org-approaches.a6_import-vars.test.api-using-potemkin_test
   (:require [midje.sweet :refer :all]
-            [com.nomistech.ns-org-approaches.a6_import-vars.api-using-potemkin
+            [com.nomistech.ns-org-approaches.a6_import-vars.src.api-using-potemkin
              :refer :all]))
 
 (fact "Values work"

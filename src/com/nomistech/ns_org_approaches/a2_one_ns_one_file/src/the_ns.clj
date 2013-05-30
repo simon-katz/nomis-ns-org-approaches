@@ -1,6 +1,7 @@
-(ns com.nomistech.ns-org-approaches.a6_import-vars.impl
-  (:require [com.nomistech.ns-org-approaches.a6_import-vars.protocols
-             :as protocols]))
+(ns com.nomistech.ns-org-approaches.a2-one-ns-one-file.src.the-ns)
+
+(defprotocol P
+  (m [_] "This is the doc string for `m`."))
 
 (def x-val
   "This is the doc string for x-val."
@@ -30,7 +31,7 @@
 (defn get-x [] *x*)
 
 (defrecord R [x]
-  protocols/P
+  P
   (m [r] (:x r)))
 
 (defn create-r

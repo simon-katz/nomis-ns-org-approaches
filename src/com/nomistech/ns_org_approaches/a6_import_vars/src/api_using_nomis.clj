@@ -1,16 +1,16 @@
-(ns com.nomistech.ns-org-approaches.a6_import-vars.api-using-potemkin
-  (:require [com.nomistech.ns-org-approaches.a6_import-vars.protocols
+(ns com.nomistech.ns-org-approaches.a6_import-vars.src.api-using-nomis
+  (:require [com.nomistech.ns-org-approaches.a6_import-vars.src.protocols
              :as protocols]
-            [com.nomistech.ns-org-approaches.a6_import-vars.impl
+            [com.nomistech.ns-org-approaches.a6_import-vars.src.impl
              :as impl]
-            [potemkin :as i]))
+            [com.nomistech.clojure-utils :as i]))
 
-(i/import-vars [protocols
-                P
+(i/import-vars protocols
+               [P
                 m])
 
-(i/import-vars [impl
-                x-val
+(i/import-vars impl
+               [x-val
                 x-fun
                 x-fun-caller
                 x-macro
@@ -23,5 +23,5 @@
   ;; on its namespace in our `ns` form. This will cause tools that rely
   ;; on `ns` forms to fail to work. That includes clojure.tools.namespace
   ;; and Midje.
-  (i/import-vars [com.nomistech.clojure-dev-utils
-                  nomis-pp-classpath]))
+  (i/import-vars com.nomistech.clojure-dev-utils
+                 [nomis-pp-classpath]))

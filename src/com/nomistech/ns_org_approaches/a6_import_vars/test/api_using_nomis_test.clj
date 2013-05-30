@@ -1,8 +1,7 @@
-(ns com.nomistech.ns-org-approaches.a2-one-ns-one-file-test.the-ns-test
+(ns com.nomistech.ns-org-approaches.a6_import-vars.test.api-using-nomis-test
   (:require [midje.sweet :refer :all]
-            [com.nomistech.ns-org-approaches.a2-one-ns-one-file.the-ns
-             :refer :all]
-            [com.nomistech.clojure-dev-utils :as u]))
+            [com.nomistech.ns-org-approaches.a6_import-vars.src.api-using-nomis
+             :refer :all]))
 
 (fact "Values work"
       x-val
@@ -21,7 +20,7 @@
       => 42)
 
 (fact "We can call `nomis-pp-classpath`"
-      (let [_ (with-out-str (u/nomis-pp-classpath))]
+      (let [_ (with-out-str (nomis-pp-classpath))]
         nil)
       => nil)
 
@@ -37,7 +36,7 @@
       (m (R2. 100))
       => 999)
 
-(fact "`with-redefs` works"
+(fact "Identity of vars is broken -- `with-redefs` doesn't work"
       (with-redefs [x-fun (fn [] "Redef")]
         (x-fun-caller))
-      => "Redef")
+      => "This is x-fun.")
