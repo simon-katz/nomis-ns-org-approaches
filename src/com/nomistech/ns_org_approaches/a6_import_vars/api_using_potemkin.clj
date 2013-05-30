@@ -1,15 +1,15 @@
-(ns com.nomistech.ns-org-approaches.import-vars.api-using-potemkin
-  (:require [com.nomistech.ns-org-approaches.import-vars.protocols
+(ns com.nomistech.ns-org-approaches.a6_import-vars.api-using-potemkin
+  (:require [com.nomistech.ns-org-approaches.a6_import-vars.protocols
              :as protocols]
-            [com.nomistech.ns-org-approaches.import-vars.impl-1
-             :as impl-1]
+            [com.nomistech.ns-org-approaches.a6_import-vars.impl
+             :as impl]
             [potemkin :as i]))
 
 (i/import-vars [protocols
                 P
                 m])
 
-(i/import-vars [impl-1
+(i/import-vars [impl
                 x-val
                 x-fun
                 x-fun-caller

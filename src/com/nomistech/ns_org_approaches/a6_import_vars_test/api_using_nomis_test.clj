@@ -1,6 +1,6 @@
-(ns com.nomistech.ns-org-approaches.import-vars-test.api-using-nomis-test
+(ns com.nomistech.ns-org-approaches.a6_import-vars-test.api-using-nomis-test
   (:require [midje.sweet :refer :all]
-            [com.nomistech.ns-org-approaches.import-vars.api-using-nomis
+            [com.nomistech.ns-org-approaches.a6_import-vars.api-using-nomis
              :refer :all]))
 
 (fact "Values work"
