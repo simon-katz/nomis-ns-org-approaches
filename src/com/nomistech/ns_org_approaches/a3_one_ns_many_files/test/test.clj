@@ -16,8 +16,8 @@
       (x-macro)
       => "This is x-macro.")
 
-(fact "Macros around dynamic binding work"
-      (with-x [42] (get-x))
+(fact "Dynamic binding works"
+      (binding [*x* 42] *x*)
       => 42)
 
 (fact "We can call `nomis-pp-classpath`"

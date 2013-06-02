@@ -23,10 +23,3 @@
   "This is x-macro.")
 
 (def ^:dynamic *x* :root-value)
-
-(defmacro with-x
-  [[x] & body]
-  `(binding [*x* ~x]
-     ~@body))
-
-(defn get-x [] *x*)
