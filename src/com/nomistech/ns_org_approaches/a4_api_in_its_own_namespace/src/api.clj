@@ -29,9 +29,8 @@
 (defrecord R [x]
   ;; I can't put `R` in the impl namespace, because if I do I'll get
   ;; circular dependencies between namespaces:
-  ;; - `create-r` depends on `R`
-  ;; - `R` depends on `P`
-  ;; - `P` and `create-r` are both in the API.
+  ;; - `R` (in impl ns) depends on `P` (in api ns)
+  ;; - api ns depends on impl ns (just in general, not for what I'm showing)
   P
   (m [r] (:x r)))
 
